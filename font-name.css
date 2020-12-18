@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "VCR OSD Mono";
+  src: url(VCR_OSD_MONO_1.001.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Gellix-Black;
+  src: url(Gellix-Black.woff2) format("woff2"),
+    url(Gellix-Black.woff) format("woff"),
+    url(Gellix-Black.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Gellix;
+  src: url(Gellix-Bold.woff2) format("woff2"),
+    url(Gellix-Bold.woff) format("woff"),
+    url(Gellix-Bold.ttf) format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Gellix;
+  src: url(Gellix-ExtraBold.woff2) format("woff2"),
+    url(Gellix-ExtraBold.woff) format("woff"),
+    url(Gellix-ExtraBold.ttf) format("truetype");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: Gellix;
+  src: url(Gellix-Light.woff2) format("woff2"),
+    url(Gellix-Light.woff) format("woff"),
+    url(Gellix-Light.ttf) format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Gellix-Medium;
+  src: url(Gellix-Medium.woff2) format("woff2"),
+    url(Gellix-Medium.woff) format("woff"),
+    url(Gellix-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Gellix;
+  src: url(Gellix-Regular.woff2) format("woff2"),
+    url(Gellix-Regular.woff) format("woff"),
+    url(Gellix-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Gellix;
+  src: url(Gellix-SemiBold.woff2) format("woff2"),
+    url(Gellix-SemiBold.woff) format("woff"),
+    url(Gellix-SemiBold.ttf) format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Gellix;
+  src: url(Gellix-Thin.woff2) format("woff2"),
+    url(Gellix-Thin.woff) format("woff"),
+    url(Gellix-Thin.ttf) format("truetype");
+  font-weight: 100;
+}

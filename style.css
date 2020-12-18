@@ -1,0 +1,510 @@
+.video-parent-section .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.video-parent-section .shop-container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 24px;
+  position: absolute;
+  bottom: 3rem;
+  right: 0;
+  left: 0;
+}
+
+.video-parent-section .shop-women {
+  margin: 0 0 0 12px;
+}
+
+@media only screen and (min-width: 768px) {
+  .video-parent-section .shop-women {
+    margin: 0 0 0 24px;
+  }
+}
+
+.video-parent-section .shop-men-women:hover:before,
+.video-parent-section .shop-men-women:hover:after {
+  transform: scaleX(0);
+  color: #fff;
+}
+
+.video-parent-section .shop-men {
+  margin: 0 12px 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .video-parent-section .shop-men {
+    margin: 0 24px 0 0;
+  }
+}
+
+.video-parent-section .shop-women {
+  margin: 0 0 0 12px;
+}
+
+@media only screen and (min-width: 768px) {
+  .video-parent-section .shop-women {
+    margin: 0 0 0 24px;
+  }
+}
+
+.video-parent-section .shop-men-women-text {
+  flex-shrink: 0;
+  letter-spacing: 1px;
+  padding-top: 13px;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #fff;
+  transform: translate3d(0, 0, 0);
+  color: #fff;
+  font-weight: bold;
+}
+
+.video-parent-section .shop-men-women {
+  display: flex;
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  outline: none;
+  margin: 0 6px;
+}
+
+@media only screen and (min-width: 768px) {
+  .video-parent-section .shop-men-women {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .video-parent-section .shop-men-women {
+    margin: 0 12px;
+  }
+}
+
+.video-parent-section .shop-men-women.focused {
+  outline: 2px solid #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.video-parent-section .shop-men-women:before {
+  transform-origin: bottom right;
+}
+
+.video-parent-section .shop-men-women:after {
+  transform-origin: bottom left;
+}
+
+.video-parent-section .shop-men-women:before,
+.video-parent-section .shop-men-women:after {
+  transition: all 0.25s;
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid #fff;
+  transform: scaleX(1);
+}
+
+.video-parent-section .shop-men-women:hover:before,
+.video-parent-section .shop-men-women:hover:after {
+  transform: scaleX(0);
+}
+
+.eg-cc-color-override-1684035601.eg-cc-window {
+  background-color: #252e39 !important;
+  color: white !important;
+}
+
+.eg-cc-color-override-1684035601 .eg-cc-btn {
+  color: #14a7d0 !important;
+  background-color: transparent !important;
+  border-color: #14a7d0 !important;
+}
+
+.size-chart-product-page {
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+  line-height: 1.5;
+  font-weight: normal;
+  text-transform: initial;
+  cursor: auto;
+}
+
+#size-chart-modal .measuring-guide {
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+#size-chart-modal .measuring-guide .steps-to-measure-size .step {
+  text-align: left;
+}
+
+#size-chart-modal .measuring-guide .steps-to-measure-size .step .step-heading {
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+#size-chart-modal .measuring-guide .steps-to-measure-size .step .step-desc {
+  margin-bottom: 0.2rem;
+}
+
+#size-chart-modal #desktop__chart .Chart--horizontal {
+  margin-bottom: 2rem;
+}
+
+#size-chart-modal #mobile__chart .Chart--vertical {
+  margin-bottom: 2rem;
+}
+
+#size-chart-modal .modal__inner .modal__centered-content {
+  max-height: 100vh;
+}
+
+#size-chart-modal .modal__inner .modal__centered-content .btn--small {
+  min-width: 80px;
+}
+
+.variant-input-wrap[name="Size"] .unavailable {
+  border-color: "#cfceca";
+  color: #ddd;
+}
+
+body
+  .eapps-instagram-feed-posts-item:hover.eapps-instagram-feed-posts-item-template-tile
+  .eapps-instagram-feed-posts-item-image {
+  transform: scale(1.1) translate(-50%, 0) !important;
+}
+
+body
+  .eapps-instagram-feed-posts-item-template-tile
+  .eapps-instagram-feed-posts-item-image {
+  transform: scale(1) translate(-50%, 0) !important;
+}
+
+body .eapps-instagram-feed-posts-item-image {
+  top: auto;
+  bottom: 0;
+}
+
+.product-section .free-shipping-container {
+  position: relative;
+}
+
+.product-section .free-shipping-container .free-shipping-img {
+  width: 200px;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 590px) {
+  .product-section .free-shipping-container .free-shipping-img {
+    width: 150px;
+    right: 0;
+  }
+}
+
+@media only screen and (min-width: 590px) and (max-width: 768px) {
+  .product-section .free-shipping-container .free-shipping-img {
+    width: 150px;
+    top: -1rem;
+    right: 0;
+  }
+}
+
+.klaviyo_newsletter_popup {
+  text-align: center;
+  font-family: "Gellix", sans-serif !important;
+}
+
+.klaviyo_newsletter_popup .klaviyo_modal_container {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  max-height: 470px;
+}
+
+.klaviyo_newsletter_popup .klaviyo_modal_form {
+  background: white;
+  padding: 1rem 3rem;
+}
+
+.klaviyo_newsletter_popup .klaviyo_modal_image {
+  width: 350px !important;
+}
+
+.klaviyo_newsletter_popup .klaviyo_newsletter_header {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.klaviyo_newsletter_popup p.klaviyo_newsletter_subheader {
+  color: black;
+  font-weight: 400;
+  margin: 0;
+}
+
+.klaviyo_newsletter_popup p.klaviyo_newsletter_subheader:last-child {
+  margin-bottom: 1rem;
+}
+
+.klaviyo_newsletter_popup button#newsletter_subscribe {
+  background: #fbcb02;
+  border-radius: 0;
+  padding: 10px;
+  font-size: 1.4rem;
+  color: black;
+  font-weight: 600;
+  text-shadow: none;
+  margin-bottom: 3.5rem;
+}
+
+.klaviyo_newsletter_popup button#newsletter_subscribe:hover {
+  background: #fbcb02;
+  color: black;
+}
+
+.klaviyo_newsletter_popup input.newsletter_email {
+  width: 100%;
+  padding: 10px;
+  margin: 1rem 0;
+}
+
+.klaviyo_newsletter_popup input.newsletter_first_name {
+  width: 100%;
+  padding: 10px;
+}
+
+.klaviyo_newsletter_popup .klaviyo_modal.klaviyo_subheader {
+  color: black;
+}
+
+.klaviyo_newsletter_popup .klaviyo_newsletter_header_close {
+  position: absolute;
+  z-index: 100;
+  color: #000;
+  font-size: 34px;
+  line-height: 1;
+  top: 0;
+  right: 1rem;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 749px) {
+  .klaviyo_newsletter_popup .klaviyo_modal_form {
+    width: 380px;
+  }
+
+  .klaviyo_newsletter_popup .klaviyo_newsletter_header_close {
+    color: #000;
+  }
+
+  .klaviyo_newsletter_popup .klaviyo_modal_image {
+    display: none !important;
+  }
+
+  .klaviyo_newsletter_popup .klaviyo_newsletter_header {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem 0;
+  }
+
+  .klaviyo_newsletter_popup button#newsletter_subscribe {
+    margin-bottom: 2rem;
+  }
+}
+
+.balance-text {
+  text-wrap: balance;
+}
+
+#discount-code-msg-modal .modal__inner {
+  height: 250px;
+  width: 350px;
+  background: white;
+  color: black;
+  z-index: 1111;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 1rem;
+  position: relative;
+}
+
+#discount-code-msg-modal .modal__close {
+  padding: 0 !important;
+  position: absolute;
+  right: 0.5rem;
+  color: black !important;
+  top: 0;
+  font-size: 26px;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#discount-code-msg-modal p.discount-msg {
+  font-size: 1.2rem;
+}
+
+#discount-code-msg-modal p.shopify-discount-code {
+  font-weight: 600;
+  background: #f2cb05;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 590px) {
+  #discount-code-msg-modal .modal__inner {
+    width: 100%;
+  }
+
+  #discount-code-msg-modal p.discount-msg {
+    font-size: 1rem;
+  }
+}
+
+.payment-buttons .add-to-cart {
+  background-color: #f2cb05;
+}
+
+.payment-buttons .add-to-cart:disabled {
+  background-color: transparent;
+}
+
+.discounted-label {
+  color: #ff4f33;
+  font-weight: 500;
+}
+
+.btn:not(.btn--tertiary).btn-cta {
+  background-color: #eccb45;
+  color: #000;
+}
+
+div#kbr-discount-applied-overlay div {
+  display: none;
+  pointer-events: none;
+}
+
+div#kbr-discount-applied-overlay {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+[class~="klaviyo-form"] * {
+  font-family: inherit !important;
+}
+
+iframe[src^="/discount/"] {
+  position: absolute;
+}
+
+#CartUpsaleFormContainer {
+  padding-bottom: 2rem;
+}
+
+.inCartUpsaleProduct--container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 15px;
+  margin: 0 -0.5rem;
+}
+
+.inCartUpsaleProduct .inCartUpsaleProduct--img {
+  display: block;
+  max-width: 100%;
+}
+
+.inCartUpsaleProduct .inCartUpsaleProduct--title {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.inCartUpsaleProduct .inCartUpsaleProduct--price {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.inCartUpsaleProduct .inCartUpsaleProduct--variantSelect {
+  font-size: 0.9rem;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+.inCartUpsaleProduct .inCartUpsaleProduct--submitBtn {
+  background-color: #00fea2 !important;
+  color: black !important;
+}
+
+#shopify-product-reviews .spr-review {
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 590px) {
+  #shopify-product-reviews .spr-review {
+    padding: 24px 20px;
+    margin-top: 1rem;
+  }
+}
+
+#shopify-product-reviews .spr-review-content {
+  max-width: 700px;
+}
+
+#shopify-product-reviews .spr-review-content .spr-review-content-body {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.suggested_products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.suggested_products > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #00000036;
+  margin: 5px 10px 5px 0;
+  width: 57px;
+  height: 57px;
+}
+
+.suggested_products > a:hover {
+  border-color: black;
+}
+
+.grid-product__image__on_hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.grid__item__banner {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 769px) {
+  .grid__item__banner {
+    margin-bottom: 1rem;
+  }
+}
