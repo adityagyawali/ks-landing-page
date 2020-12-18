@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <link rel="stylesheet" type="text/css" href="./font-name.css" />
     <style>
-      p, h3, span {
+      p, h3 {
         max-width: 600px;
         margin-right: auto;
         margin-left: auto;
@@ -190,6 +190,13 @@
         @media only screen and (max-width: 589px) {
           .shop-btn-container {
             flex-direction: column;
+          }
+          .shop-now {
+            margin-bottom: 0.5rem;
+            width: 11rem;
+            font-size: 1rem;
+            padding-top: 8px;
+            padding-bottom: 8px;
           }
         }
       </style>
@@ -516,30 +523,37 @@
           margin: auto;
         }
 
-        .order-proof {
+        /* .order-proof {
           grid-area: first;
         }
         .anti-bacterial {
           grid-area: second;
         }
-        .ultra-voilet {
+        /* .ultra-voilet {
           grid-area: third;
-        }
-        .quick-dry {
-          grid-area: fourth;
-        }
+        } */
+        /* .quick-dry {
+          grid-area: third;
+        } */
 
         .shoe-properties {
           max-width: 600px;
           margin: auto;
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          grid-template-rows: auto;
+          display: flex;
+          flex-wrap: wrap;
+          /* grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr;
           grid-template-areas:
             "first second"
-            "third fourth";
+            "third"; */
         }
-
+        .order-proof, .anti-bacterial {
+          width: 50%;
+        }
+        .quick-dry {
+          margin-left: auto;
+          margin-right: auto;
+        }
         .properties-title {
           font-weight: bold;
         }
@@ -588,7 +602,7 @@
               Coffee material is antimicrobial, stopping odors before they start
             </p>
           </div>
-          <div class="ultra-voilet">
+          <!-- <div class="ultra-voilet">
             <img
               class="lazyload"
               src="https://cdn.shopify.com/s/files/1/0461/0673/8837/files/ultra-voilet_1x1.png?v=1608216525"
@@ -606,7 +620,7 @@
               Coffee material is UV-blocking properties, ensuring colors stay
               brighter longer
             </p>
-          </div>
+          </div> -->
           <div class="quick-dry">
             <img
               class="lazyload"
@@ -940,6 +954,12 @@
         />
       </div>
       <style>
+        .sustainable-by-default-text {
+          max-width: 600px;
+          margin-left: auto;
+          margin-right: auto;
+
+        }
         .sustainable-by-default-container .plastic-bottle,
         .coffee-cup {
           width: 50px !important;
@@ -951,16 +971,19 @@
           display: flex;
           justify-content: center;
           column-gap: 1rem;
+
         }
 
         .methane-emitted-container {
           background: #fff;
           display: flex;
           justify-content: center;
-          padding: 2rem 0;
+          padding: 2rem 1rem;
           align-items: center;
         }
-
+        .coffee-cup-container, .plastic-bottle-container {
+          width: 50%;
+        }
         .methane-emitted-car {
           width: 110px !important;
         }
@@ -977,63 +1000,76 @@
       </style>
       <div class="sustainable-by-default-container index-section">
         <h3 class="text-center balance-text">SUSTAINABLE BY DEFAULT</h3>
-        <div class="coffee-cup-plastic-bottle">
-          <div class="plastic-bottle-container">
+        <div class="sustainable-by-default-text">
+          <div class="coffee-cup-plastic-bottle">
+            <div class="plastic-bottle-container">
+              <img
+                class="plastic-bottle lazyload"
+                src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/plastic-bottles_1x1.png?v=1608278860"
+
+                srcset="
+                https://cdn.shopify.com/s/files/1/0032/6057/9938/files/plastic-bottles_540x.png?v=1608278860 540w
+                "
+                data-src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/plastic-bottles_{width}x.png?v=1608278860"
+                data-sizes="auto"
+                data-widths="[180, 360,540]"
+                alt="Plastic bottle"
+                itemprop="logo"
+              />
+              <p class="text-center balance-text">
+                1,000,000 plastic bottles are purchased every minute.
+              </p>
+            </div>
+            <div class="coffee-cup-container">
+              <img
+                class="coffee-cup lazyload"
+                src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/cup_1x1.png?v=1608278861"
+                srcset="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/cup_540x.png?v=1608278861 540w"
+                data-src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/cup_{width}x.png?v=1608278861"
+                data-sizes="auto"
+                data-widths="[180, 360,540]"
+                alt="Coffee cup"
+                itemprop="logo"
+              />
+              <p class="text-center balance-text">
+                500,000 tons of coffee waste go into landfills every year.
+              </p>
+            </div>
+          </div>
+          <div class="methane-emitted-container">
             <img
-              class="plastic-bottle lazyload"
-              src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/plastic-bottles_1x1.png?v=1608278860"
-              data-src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/plastic-bottles_{width}x.png?v=1608278860"
+              class="methane-emitted-car lazyload"
+              src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/car-100_1x1.png?v=1608278861"
+              srcset="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/car-100_540x.png?v=1608278861 540w"
+              data-src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/car-100_{width}x.png?v=1608278861"
               data-sizes="auto"
               data-widths="[180, 360,540]"
-              alt="Plastic bottle"
+              alt="Car X 1000"
               itemprop="logo"
             />
             <p class="text-center balance-text">
-              1,000,000 plastic bottles are purchased every minute.
+              The methane emitted from coffee waste alone adds up to the
+              equivalent emissions of 10 million cars.
             </p>
           </div>
-          <div class="coffee-cup-container">
-            <img
-              class="coffee-cup lazyload"
-              src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/cup_1x1.png?v=1608278861"
-              data-src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/cup_{width}x.png?v=1608278861"
-              data-sizes="auto"
-              data-widths="[180, 360,540]"
-              alt="Coffee cup"
-              itemprop="logo"
-            />
-            <p class="text-center balance-text">
-              500,000 tons of coffee waste go into landfills every year.
-            </p>
-          </div>
-        </div>
-        <div class="methane-emitted-container">
-          <img
-            class="methane-emitted-car lazyload"
-            src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/car-100_1x1.png?v=1608278861"
-            data-src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/car-100_{width}x.png?v=1608278861"
-            data-sizes="auto"
-            data-widths="[180, 360,540]"
-            alt="Car X 1000"
-            itemprop="logo"
-          />
+          <p class="mt-20 text-center balance-text">
+            Every pair of Rens is made from 6 recycled plastic bottles 150 grams
+            of coffee waste.
+          </p>
           <p class="text-center balance-text">
-            The methane emitted from coffee waste alone adds up to the
-            equivalent emissions of 10 million cars.
+            So you get all the benefits of a fully-featured, street-ready sneaker
+            while reducing the amount of plastic pollution and methane-producing
+            organic waste that ends up in landfills.
           </p>
         </div>
-        <p class="mt-20 text-center balance-text">
-          Every pair of Rens is made from 6 recycled plastic bottles 150 grams
-          of coffee waste.
-        </p>
-        <p class="text-center balance-text">
-          So you get all the benefits of a fully-featured, street-ready sneaker
-          while reducing the amount of plastic pollution and methane-producing
-          organic waste that ends up in landfills.
-        </p>
         <img
           class="sustainable-images lazyload"
           src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/sustainable-images-grid_1x1.png?v=1608279157"
+          srcset="
+          https://cdn.shopify.com/s/files/1/0032/6057/9938/files/sustainable-images-grid_1024x.png?v=1608279157 1024w,
+          https://cdn.shopify.com/s/files/1/0032/6057/9938/files/sustainable-images-grid_900x.png?v=1608279157 900w,
+          https://cdn.shopify.com/s/files/1/0032/6057/9938/files/sustainable-images-grid_540x.png?v=1608279157 540w,
+          "
           data-src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/sustainable-images-grid_{width}x.png?v=1608279157"
           data-sizes="auto"
           data-widths="[180, 360,540,900,1080]"
@@ -1056,6 +1092,11 @@
         <img
           class="mt-2rem more-features lazyload"
           src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/more-features_1x1.png?v=1608280183"
+          srcset="
+          https://cdn.shopify.com/s/files/1/0032/6057/9938/files/more-features_1024x.png?v=1608280183 1024w,
+          https://cdn.shopify.com/s/files/1/0032/6057/9938/files/more-features_900x.png?v=1608280183 900w,
+          https://cdn.shopify.com/s/files/1/0032/6057/9938/files/more-features_540x.png?v=1608280183 540w,
+          "
           data-src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/more-features_{width}x.png?v=1608280183"
           data-sizes="auto"
           data-widths="[180, 360,540,900,1080]"
@@ -1115,6 +1156,11 @@
           <img
             class="life-style-img lazyload"
             src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/rebel-white-lifestyle_1x1.png?v=1608280543"
+            srcset="
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/rebel-white-lifestyle_1024x.png?v=1608280543 1024w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/rebel-white-lifestyle_900x.png?v=1608280543 900w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/rebel-white-lifestyle_540x.png?v=1608280543 540w,
+            "
             data-src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/rebel-white-lifestyle_{width}x.png?v=1608280543"
             data-sizes="auto"
             data-widths="[180, 360, 540, 900, 1080]"
@@ -1129,6 +1175,11 @@
           <img
             class="product-shot-img lazyload"
             src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/rebel-white-product_1x1.png?v=1608280543"
+            srcset="
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/rebel-white-product_1024x.png?v=1608280543 1024w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/rebel-white-product_900x.png?v=1608280543 900w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/rebel-white-product_540x.png?v=1608280543 540w,
+            "
             data-src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/rebel-white-product_{width}x.png?v=1608280543"
             data-sizes="auto"
             data-widths="[180, 360, 540, 900, 1080]"
@@ -1140,7 +1191,13 @@
           <h3 class="text-center balance-text">CLASSIC WHITE</h3>
           <img
             class="life-style-img lazyload"
+
             src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/classic-white_1x1.png?v=1608280820"
+            srcset="
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/classic-white_1024x.png?v=1608280820 1024w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/classic-white_900x.png?v=1608280820 900w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/classic-white_540x.png?v=1608280820 540w,
+            "
             data-src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/classic-white_{width}x.png?v=1608280820"
             data-sizes="auto"
             data-widths="[180, 360, 540, 900, 1080]"
@@ -1155,7 +1212,13 @@
           </p>
           <img
             class="product-shot-img lazyload"
+
             src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/classic-white-product_1x1.png?v=1608280820"
+            srcset="
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/classic-white-product_1024x.png?v=1608280820 1024w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/classic-white-product_900x.png?v=1608280820 900w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/classic-white-product_540x.png?v=1608280820 540w,
+            "
             data-src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/classic-white-product_{width}x.png?v=1608280820"
             data-sizes="auto"
             data-widths="[180, 360, 540, 900, 1080]"
@@ -1167,7 +1230,13 @@
           <h3 class="text-center balance-text">ARCTIC BLACK</h3>
           <img
             class="life-style-img lazyload"
+
             src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/arctic-black_1x1.png?v=1608281058"
+            srcset="
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/arctic-black_1024x.png?v=1608281058 1024w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/arctic-black_900x.png?v=1608281058 900w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/arctic-black_540x.png?v=1608281058 540w,
+            "
             data-src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/arctic-black_{width}x.png?v=1608281058"
             data-sizes="auto"
             data-widths="[180, 360, 540, 900, 1080]"
@@ -1181,7 +1250,13 @@
           </p>
           <img
             class="product-shot-img lazyload"
+
             src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/arctic-black-product_1x1.png?v=1608281058"
+            srcset="
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/arctic-black-product_1024x.png?v=1608281058 1024w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/arctic-black-product_900x.png?v=1608281058 900w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/arctic-black-product_540x.png?v=1608281058 540w,
+            "
             data-src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/arctic-black-product_{width}x.png?v=1608281058"
             data-sizes="auto"
             data-widths="[180, 360, 540, 900, 1080]"
@@ -1193,7 +1268,13 @@
           <h3 class="text-center balance-text">STEALTH BLACK</h3>
           <img
             class="life-style-img lazyload"
+
             src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/stealth-black_1x1.png?v=1608281363"
+            srcset="
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/stealth-black_1024x.png?v=1608281363 1024w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/stealth-black_900x.png?v=1608281363 900w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/stealth-black_540x.png?v=1608281363 540w,
+            "
             data-src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/stealth-black_{width}x.png?v=1608281363"
             data-sizes="auto"
             data-widths="[180, 360, 540, 900, 1080]"
@@ -1208,7 +1289,13 @@
           </p>
           <img
             class="product-shot-img lazyload"
+
             src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/stealth-black-product_1x1.png?v=1608281363"
+            srcset="
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/stealth-black-product_1024x.png?v=1608281363 1024w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/stealth-black-product_900x.png?v=1608281363 900w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/stealth-black-product_540x.png?v=1608281363 540w,
+            "
             data-src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/stealth-black-product_{width}x.png?v=1608281363"
             data-sizes="auto"
             data-widths="[180, 360, 540, 900, 1080]"
@@ -1220,7 +1307,13 @@
           <h3 class="text-center balance-text">REBEL BLACK</h3>
           <img
             class="life-style-img lazyload"
+
             src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/rebel-black_1x1.png?v=1608281499"
+            srcset="
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/rebel-black_1024x.png?v=1608281499 1024w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/rebel-black_900x.png?v=1608281499 900w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/rebel-black_540x.png?v=1608281499 540w,
+            "
             data-src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/rebel-black_{width}x.png?v=1608281499"
             data-sizes="auto"
             data-widths="[180, 360, 540, 900, 1080]"
@@ -1235,7 +1328,13 @@
           </p>
           <img
             class="product-shot-img lazyload"
+
             src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/rebel-black-product_1x1.png?v=1608281499"
+            srcset="
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/rebel-black-product_1024x.png?v=1608281499 1024w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/rebel-black-product_900x.png?v=1608281499 900w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/rebel-black-product_540x.png?v=1608281499 540w,
+            "
             data-src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/rebel-black-product_{width}x.png?v=1608281499"
             data-sizes="auto"
             data-widths="[180, 360, 540, 900, 1080]"
@@ -1247,7 +1346,13 @@
           <h3 class="text-center balance-text">THE WANDERER</h3>
           <img
             class="life-style-img lazyload"
+
             src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/wanderer_1x1.png?v=1608281627"
+            srcset="
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/wanderer_1024x.png?v=1608281627 1024w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/wanderer_900x.png?v=1608281627 900w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/wanderer_540x.png?v=1608281627 1024w,
+            "
             data-src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/wanderer_{width}x.png?v=1608281627"
             data-sizes="auto"
             data-widths="[180, 360, 540, 900, 1080]"
@@ -1261,7 +1366,13 @@
           </p>
           <img
             class="product-shot-img lazyload"
+
             src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/wanderer-product_1x1.png?v=1608281627"
+            srcset="
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/wanderer-product_1024x.png?v=1608281627 1024w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/wanderer-product_900x.png?v=1608281627 900w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/wanderer-product_540x.png?v=1608281627 1024w,
+            "
             data-src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/wanderer-product_{width}x.png?v=1608281627"
             data-sizes="auto"
             data-widths="[180, 360, 540, 900, 1080]"
@@ -1273,7 +1384,13 @@
           <h3 class="text-center balance-text">PASSION RED</h3>
           <img
             class="life-style-img lazyload"
+
             src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/passion-red_1x1.png?v=1608281822"
+            srcset="
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/passion-red_1024x.png?v=1608281822 1024w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/passion-red_900x.png?v=1608281822 900w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/passion-red_540x.png?v=1608281822 540w,
+            "
             data-src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/passion-red_{width}x.png?v=1608281822"
             data-sizes="auto"
             data-widths="[180, 360, 540, 900, 1080]"
@@ -1287,7 +1404,13 @@
           </p>
           <img
             class="product-shot-img lazyload"
+
             src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/passion-red-product_1x1.png?v=1608281822"
+            srcset="
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/passion-red-product_1024x.png?v=1608281822 1024w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/passion-red-product_900x.png?v=1608281822 900w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/passion-red-product_540x.png?v=1608281822 540w,
+            "
             data-src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/passion-red-product_{width}x.png?v=1608281822"
             data-sizes="auto"
             data-widths="[180, 360, 540, 900, 1080]"
@@ -1299,7 +1422,13 @@
           <h3 class="text-center balance-text">OCEAN BLUE</h3>
           <img
             class="life-style-img lazyload"
+
             src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/ocean-blue_1x1.png?v=1608282027"
+            srcset="
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/ocean-blue_1024x.png?v=1608282027 1024w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/ocean-blue_900x.png?v=1608282027 900w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/ocean-blue_540x.png?v=1608282027 540w,
+            "
             data-src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/ocean-blue_{width}x.png?v=1608282027"
             data-sizes="auto"
             data-widths="[180, 360, 540, 900, 1080]"
@@ -1314,7 +1443,13 @@
           </p>
           <img
             class="product-shot-img lazyload"
+
             src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/ocean-blue-product_1x1.png?v=1608282027"
+            srcset="
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/ocean-blue-product_1024x.png?v=1608282027 1024w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/ocean-blue-product_900x.png?v=1608282027 900w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/ocean-blue-product_540x.png?v=1608282027 540w,
+            "
             data-src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/ocean-blue-product_{width}x.png?v=1608282027"
             data-sizes="auto"
             data-widths="[180, 360, 540, 900, 1080]"
@@ -1326,7 +1461,13 @@
           <h3 class="text-center balance-text">SWEET PINK</h3>
           <img
             class="life-style-img lazyload"
+
             src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/sweet-pink_1x1.png?v=1608282393"
+            srcset="
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/sweet-pink_1024x.png?v=1608282393 1024w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/sweet-pink_900x.png?v=1608282393 900w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/sweet-pink_540x.png?v=1608282393 540w,
+            "
             data-src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/sweet-pink_{width}x.png?v=1608282393"
             data-sizes="auto"
             data-widths="[180, 360, 540, 900, 1080]"
@@ -1341,7 +1482,13 @@
           </p>
           <img
             class="product-shot-img lazyload"
+
             src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/sweet-pink-product_1x1.png?v=1608282393"
+            srcset="
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/sweet-pink-product_1024x.png?v=1608282393 1024w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/sweet-pink-product_900x.png?v=1608282393 900w,
+            https://cdn.shopify.com/s/files/1/0032/6057/9938/files/sweet-pink-product_540x.png?v=1608282393 540w,
+            "
             data-src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/sweet-pink-product_{width}x.png?v=1608282393"
             data-sizes="auto"
             data-widths="[180, 360, 540, 900, 1080]"
@@ -1427,6 +1574,11 @@
         <img
           class="size-chart-instruction lazyload"
           src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/sizing-instruction_1x1.gif?v=1608282505"
+          srcset="
+          https://cdn.shopify.com/s/files/1/0032/6057/9938/files/sizing-instruction_1024x.gif?v=1608282505 1024w,
+          https://cdn.shopify.com/s/files/1/0032/6057/9938/files/sizing-instruction_900x.gif?v=1608282505 900w,
+          https://cdn.shopify.com/s/files/1/0032/6057/9938/files/sizing-instruction_540x.gif?v=1608282505 540w,
+          "
           data-src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/sizing-instruction_{width}x.gif?v=1608282505"
           data-sizes="auto"
           data-widths="[180, 360,540,900,1080]"
@@ -1763,7 +1915,10 @@
       <style>
         .customers-review-container {
           max-width: 600px;
-          margin: auto;
+          margin-right: auto;
+          margin-left: auto;
+          text-align: left;
+
         }
         .bold {
           font-weight: bold;
@@ -1895,7 +2050,13 @@
           </div>
         </div>
       </div>
-      <style></style>
+      <style>
+        .bogo-image {
+          max-width: 600px;
+          margin-right: auto;
+          margin-left: auto;
+        }
+      </style>
       <div class="bogo-deal-container index-section">
         <h3 class="balance-text text-center">BUY 2, TAKE $20 OFF.</h3>
         <p class="text-center balance-text">
@@ -1906,6 +2067,11 @@
         <img
           class="bogo-image lazyload"
           src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/bogo_1x1.png?v=1608283017"
+          srcset="
+          https://cdn.shopify.com/s/files/1/0032/6057/9938/files/bogo_900x.png?v=1608283017 900w,
+          https://cdn.shopify.com/s/files/1/0032/6057/9938/files/bogo_720x.png?v=1608283017 720w,
+          https://cdn.shopify.com/s/files/1/0032/6057/9938/files/bogo_540x.png?v=1608283017 540w,
+          "
           data-src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/bogo_{width}x.png?v=1608283017"
           data-sizes="auto"
           data-widths="[180, 360, 540, 900]"
@@ -1922,8 +2088,13 @@
           footwear design.
         </p>
         <img
-          class="bogo-image lazyload"
+          class="our-team lazyload"
           src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/our-team_1x1.png?v=1608283275"
+          srcset="
+          https://cdn.shopify.com/s/files/1/0032/6057/9938/files/our-team_1024x.png?v=1608283275 1024w,
+          https://cdn.shopify.com/s/files/1/0032/6057/9938/files/our-team_900x.png?v=1608283275 900w,
+          https://cdn.shopify.com/s/files/1/0032/6057/9938/files/our-team_540x.png?v=1608283275 540w,
+          "
           data-src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/our-team_{width}x.png?v=1608283275"
           data-sizes="auto"
           data-widths="[180, 360, 540, 900, 1080]"
@@ -1963,8 +2134,13 @@
       </style>
       <div class="our-story-container index-section">
         <img
-          class="bogo-image lazyload"
+          class="sustainable-insta-image lazyload"
           src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/sustainable-insta_1x1.png?v=1608283471"
+          srcset="
+          https://cdn.shopify.com/s/files/1/0032/6057/9938/files/sustainable-insta_1024x.png?v=1608283471 1024w,
+          https://cdn.shopify.com/s/files/1/0032/6057/9938/files/sustainable-insta_900x.png?v=1608283471 900w,
+          https://cdn.shopify.com/s/files/1/0032/6057/9938/files/sustainable-insta_540x.png?v=1608283471 540w,
+          "
           data-src="https://cdn.shopify.com/s/files/1/0032/6057/9938/files/sustainable-insta_{width}x.png?v=1608283471"
           data-sizes="auto"
           data-widths="[180, 360, 540, 900, 1080]"
